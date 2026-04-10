@@ -21,7 +21,7 @@ class OpenAIService {
           ]
         }),
       )
-          .timeout(const Duration(seconds: 15)); // timeout added
+          .timeout(const Duration(seconds: 15)); 
 
       if (response.statusCode == 200) {
         final data = jsonDecode(response.body);
