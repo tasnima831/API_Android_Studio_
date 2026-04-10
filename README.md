@@ -1,17 +1,92 @@
-# untitled
+# 🤖 Flutter AI Chat App
 
-A new Flutter project.
+A simple Flutter chat application that integrates **OpenAI API** and a **free AI API (OpenRouter)** with authentication, theme switching, and chat history.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 🚀 Features
 
-A few resources to get you started if this is your first Flutter project:
+- 🔐 Simple Login System (SharedPreferences)
+- 💬 AI Chat Interface
+- 🤖 OpenAI API Integration
+- 🔁 Free AI API fallback (OpenRouter)
+- 🌙 Dark / Light Theme Toggle
+- ⏳ Typing Indicator
+- 💾 Local message storage (in memory)
+- ⚡ Clean Provider State Management
+- ❌ Proper Error Handling (401, 404, 429, network errors)
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🛠️ Tech Stack
+
+- Flutter
+- Dart
+- Provider (State Management)
+- HTTP package
+- SharedPreferences
+- Lottie Animations
+- OpenAI API
+- OpenRouter API (Free AI models)
+
+---
+
+## 📁 Project Structure
+
+
+lib/
+│
+├── main.dart
+├── root.dart
+│
+├── providers/
+│ ├── auth_provider.dart
+│ ├── chat_provider.dart
+│ ├── theme_provider.dart
+│
+├── services/
+│ ├── openai_service.dart
+│ ├── openrouter_service.dart
+│
+├── screens/
+│ ├── login_screen.dart
+│ ├── chat_screen.dart
+│
+├── widgets/
+│ ├── message_bubble.dart
+
+
+---
+
+## 🔑 API Setup
+
+### 1. OpenAI API Key
+Get from:
+https://platform.openai.com/api-keys
+
+### 2. OpenRouter API Key (Free AI)
+Get from:
+https://openrouter.ai
+
+---
+
+## ▶️ Run Project
+
+### Step 1: Install dependencies
+flutter pub get
+Step 2: Run app with API keys
+flutter run --dart-define=...........................
+⚙️ Features Explanation
+🤖 AI Switching
+Toggle switch in app bar
+ON → OpenAI
+OFF → Free AI API
+❌ Error Handling
+Error Code	Meaning
+401	Invalid API key
+404	API/model not found
+429	Rate limit exceeded
+500	Server error
+
+👨‍💻 Developer
+Tasnima Akther Tisha
