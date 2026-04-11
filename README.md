@@ -75,7 +75,7 @@ https://openrouter.ai
 ### Step 1: Install dependencies
 flutter pub get
 Step 2: Run app with API keys
-flutter run --dart-define=OPENAI_API_KEY=api-key --dart-define=OPENROUTER_API_KEY=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
+flutter run --dart-define=OPENAI_API_KEY=api-key --dart-define=OPENROUTER_API_KEY=api_key
 ⚙️ Features Explanation
 🤖 AI Switching
 Toggle switch in app bar
